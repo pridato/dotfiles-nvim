@@ -16,3 +16,6 @@ end
 
 -- Asignar atajo de teclado
 keymap("n", "<Leader>cv", create_venv, silent)
+
+-- Asigna un atajo para abrir/cerrar la terminal
+vim.api.nvim_set_keymap("n", "<leader>T", ":ToggleTerm<CR>", { noremap = true, silent = true })
